@@ -53,7 +53,7 @@
 	
 			<label>Total Cost:</label>
 			
-			<c:out value="${finalTotal}" />
+			<fmt:formatNumber value="${finalTotal}" type = "currency"/>
 		</p>
 		</fieldset>
 		<p>
@@ -63,8 +63,9 @@
 	
 
 
-		<p>
-			<fmt:formatNumber value="${age}" type="number" />
+		<p class = "phoneNum" >
+			<c:out value="${pNumber}" /> 
+		
 		</p>
 
 

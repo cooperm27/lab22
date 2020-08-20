@@ -113,8 +113,8 @@
 	<input type="text" name="name" required pattern="[A-Za-z]+" minlength="2" maxlength="10"/>
 	</p>
 	
-	<p>Age:
-	<input type="number" name="age" min="0" max="100" step="1" />
+	<p>Phone Number:
+	<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
 	</p>
 	
 	<p>Email:

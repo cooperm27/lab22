@@ -60,6 +60,7 @@
 	border-radius: 8px;
 	background-color: #990000;
 }
-.currency{
+.phoneNum{
+	pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 	
 }

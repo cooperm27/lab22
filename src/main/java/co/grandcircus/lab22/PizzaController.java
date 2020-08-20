@@ -35,7 +35,7 @@ public class PizzaController {
 		public String submitOrderForm(Model model, @RequestParam(name = "cheese", required = false) String cheese,@RequestParam(name = "protein", required = false, defaultValue = "none") String protein,
 				@RequestParam(name = "toppings", defaultValue = "") List<String> toppings,
 				@RequestParam(name = "beverage", defaultValue = "none") String beverage, @RequestParam("name") String name,@RequestParam("size") String size,@RequestParam("crust") String crust,
-				@RequestParam("age") Double age, @RequestParam("email") String email, @RequestParam(name = "instructions", defaultValue = "") String instructions)
+				@RequestParam("phone") Double pNumber, @RequestParam("email") String email, @RequestParam(name = "instructions", defaultValue = "") String instructions)
 				{
 
 			
@@ -43,7 +43,7 @@ public class PizzaController {
 			model.addAttribute("toppings", toppings);
 			model.addAttribute("beverage", beverage);
 			model.addAttribute("name", name);
-			model.addAttribute("age", age);
+			model.addAttribute("pNumber", pNumber);
 			model.addAttribute("email", email);
 			model.addAttribute("instructions", instructions);
 			model.addAttribute("size", size);
